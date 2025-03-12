@@ -1,0 +1,946 @@
+@import url("https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap");
+body {
+  font-family: "Lexend", sans-serif;
+}
+
+.btn-go-container,
+.btn-match-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 260px;
+  height: 260px;
+  border: 5px solid rgb(255, 242, 0);
+  white-space: nowrap;
+}
+
+.btn-settings-container,
+.btn-exit-container,
+.btn-audio-container,
+.btn-mute-container,
+.btn-previous-container,
+.btn-next-container,
+.btn-return-container,
+.btn-home-container,
+.btn-pause-container,
+.btn-replay-container,
+.btn-close-container,
+.btn-repeat-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 140px;
+  height: 140px;
+  border: 5px solid rgb(255, 242, 0);
+  white-space: nowrap;
+}
+
+.btn-howtoplay-container,
+.btn-playagain-container,
+.btn-1player-container,
+.btn-2player-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 340px;
+  height: 140px;
+  border: 5px solid rgb(255, 242, 0);
+  white-space: nowrap;
+}
+
+.btn-back-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 260px;
+  height: 140px;
+  border: 5px solid rgb(255, 242, 0);
+  white-space: nowrap;
+}
+
+.btn-character-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 155px;
+  height: 219px;
+  border: 5px solid rgb(255, 242, 0);
+  white-space: nowrap;
+}
+
+.btn-play-container,
+.btn-pause-container {
+  z-index: 10;
+}
+
+.btn-go {
+  width: 250px;
+  height: 250px;
+  background-size: cover;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  will-change: background-image;
+  transition: width 0.2s ease-in-out, height 0.2s ease-in-out;
+  background-image: url("/assets/styles/secondary/svgs/go-normal.svg");
+}
+.btn-go:hover {
+  width: 260px;
+  height: 260px;
+  background-image: url("/assets/styles/secondary/svgs/go-normal-hover.svg");
+}
+.btn-go:active {
+  width: 250px;
+  height: 250px;
+  background-image: url("/assets/styles/secondary/svgs/go-active.svg");
+}
+.btn-go:focus-visible {
+  width: 260px;
+  height: 260px;
+  background-image: url("/assets/styles/secondary/svgs/go-normal-focus.svg");
+}
+.btn-go:focus-visible:active {
+  width: 250px;
+  height: 250px;
+  background-image: url("/assets/styles/secondary/svgs/go-active-focus.svg");
+}
+
+.btn-exit {
+  width: 130px;
+  height: 130px;
+  background-size: cover;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  will-change: background-image;
+  transition: width 0.2s ease-in-out, height 0.2s ease-in-out;
+  background-image: url("/assets/styles/secondary/svgs/exit-normal.svg");
+  transition: width 0.2s ease-in-out, height 0.2s ease-in-out;
+}
+.btn-exit:hover {
+  width: 140px;
+  height: 140px;
+  background-image: url("/assets/styles/secondary/svgs/exit-normal-hover.svg");
+}
+.btn-exit:active {
+  width: 130px;
+  height: 130px;
+  background-image: url("/assets/styles/secondary/svgs/exit-active.svg");
+}
+.btn-exit:focus-visible {
+  width: 140px;
+  height: 140px;
+  background-image: url("/assets/styles/secondary/svgs/exit-normal-focus.svg");
+}
+.btn-exit:focus-visible:active {
+  width: 130px;
+  height: 130px;
+  background-image: url("/assets/styles/secondary/svgs/exit-active-focus.svg");
+}
+
+.btn-audio {
+  width: 130px;
+  height: 130px;
+  background-size: cover;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  will-change: background-image;
+  transition: width 0.2s ease-in-out, height 0.2s ease-in-out;
+  background-image: url("/assets/styles/secondary/svgs/audio-normal.svg");
+  transition: width 0.2s ease-in-out, height 0.2s ease-in-out;
+}
+.btn-audio:hover {
+  width: 140px;
+  height: 140px;
+  background-image: url("/assets/styles/secondary/svgs/audio-normal-hover.svg");
+}
+.btn-audio:active {
+  width: 130px;
+  height: 130px;
+  background-image: url("/assets/styles/secondary/svgs/audio-active.svg");
+}
+.btn-audio:focus-visible {
+  width: 140px;
+  height: 140px;
+  background-image: url("/assets/styles/secondary/svgs/audio-normal-focus.svg");
+}
+.btn-audio:focus-visible:active {
+  width: 130px;
+  height: 130px;
+  background-image: url("/assets/styles/secondary/svgs/audio-active-focus.svg");
+}
+
+.btn-mute {
+  width: 130px;
+  height: 130px;
+  background-size: cover;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  will-change: background-image;
+  transition: width 0.2s ease-in-out, height 0.2s ease-in-out;
+  background-image: url("/assets/styles/secondary/svgs/mute-normal.svg");
+  transition: width 0.2s ease-in-out, height 0.2s ease-in-out;
+}
+.btn-mute:hover {
+  width: 140px;
+  height: 140px;
+  background-image: url("/assets/styles/secondary/svgs/mute-normal-hover.svg");
+}
+.btn-mute:active {
+  width: 130px;
+  height: 130px;
+  background-image: url("/assets/styles/secondary/svgs/mute-active.svg");
+}
+.btn-mute:focus-visible {
+  width: 140px;
+  height: 140px;
+  background-image: url("/assets/styles/secondary/svgs/mute-normal-focus.svg");
+}
+.btn-mute:focus-visible:active {
+  width: 130px;
+  height: 130px;
+  background-image: url("/assets/styles/secondary/svgs/mute-active-focus.svg");
+}
+
+.btn-repeat {
+  width: 130px;
+  height: 130px;
+  background-size: cover;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  will-change: background-image;
+  transition: width 0.2s ease-in-out, height 0.2s ease-in-out;
+  background-image: url("/assets/styles/secondary/svgs/repeat-normal.svg");
+  transition: width 0.2s ease-in-out, height 0.2s ease-in-out;
+}
+.btn-repeat:hover {
+  width: 140px;
+  height: 140px;
+  background-image: url("/assets/styles/secondary/svgs/repeat-normal-hover.svg");
+}
+.btn-repeat:active {
+  width: 130px;
+  height: 130px;
+  background-image: url("/assets/styles/secondary/svgs/repeat-active.svg");
+}
+.btn-repeat:focus-visible {
+  width: 140px;
+  height: 140px;
+  background-image: url("/assets/styles/secondary/svgs/repeat-normal-focus.svg");
+}
+.btn-repeat:focus-visible:active {
+  width: 130px;
+  height: 130px;
+  background-image: url("/assets/styles/secondary/svgs/repeat-active-focus.svg");
+}
+
+.btn-previous {
+  width: 130px;
+  height: 130px;
+  background-size: cover;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  will-change: background-image;
+  transition: width 0.2s ease-in-out, height 0.2s ease-in-out;
+  background-image: url("/assets/styles/secondary/svgs/previous-normal.svg");
+  transition: width 0.2s ease-in-out, height 0.2s ease-in-out;
+}
+.btn-previous:hover {
+  width: 140px;
+  height: 140px;
+  background-image: url("/assets/styles/secondary/svgs/previous-normal-hover.svg");
+}
+.btn-previous:active {
+  width: 130px;
+  height: 130px;
+  background-image: url("/assets/styles/secondary/svgs/previous-active.svg");
+}
+.btn-previous:focus-visible {
+  width: 140px;
+  height: 140px;
+  background-image: url("/assets/styles/secondary/svgs/previous-normal-focus.svg");
+}
+.btn-previous:focus-visible:active {
+  width: 130px;
+  height: 130px;
+  background-image: url("/assets/styles/secondary/svgs/previous-active-focus.svg");
+}
+
+.btn-next {
+  width: 130px;
+  height: 130px;
+  background-size: cover;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  will-change: background-image;
+  transition: width 0.2s ease-in-out, height 0.2s ease-in-out;
+  background-image: url("/assets/styles/secondary/svgs/next-normal.svg");
+  transition: width 0.2s ease-in-out, height 0.2s ease-in-out;
+}
+.btn-next:hover {
+  width: 140px;
+  height: 140px;
+  background-image: url("/assets/styles/secondary/svgs/next-normal-hover.svg");
+}
+.btn-next:active {
+  width: 130px;
+  height: 130px;
+  background-image: url("/assets/styles/secondary/svgs/next-active.svg");
+}
+.btn-next:focus-visible {
+  width: 140px;
+  height: 140px;
+  background-image: url("/assets/styles/secondary/svgs/next-normal-focus.svg");
+}
+.btn-next:focus-visible:active {
+  width: 130px;
+  height: 130px;
+  background-image: url("/assets/styles/secondary/svgs/next-active-focus.svg");
+}
+
+.btn-return {
+  width: 130px;
+  height: 130px;
+  background-size: cover;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  will-change: background-image;
+  transition: width 0.2s ease-in-out, height 0.2s ease-in-out;
+  background-image: url("/assets/styles/secondary/svgs/return-normal.svg");
+  transition: width 0.2s ease-in-out, height 0.2s ease-in-out;
+}
+.btn-return:hover {
+  width: 140px;
+  height: 140px;
+  background-image: url("/assets/styles/secondary/svgs/return-normal-hover.svg");
+}
+.btn-return:active {
+  width: 130px;
+  height: 130px;
+  background-image: url("/assets/styles/secondary/svgs/return-active.svg");
+}
+.btn-return:focus-visible {
+  width: 140px;
+  height: 140px;
+  background-image: url("/assets/styles/secondary/svgs/return-normal-focus.svg");
+}
+.btn-return:focus-visible:active {
+  width: 130px;
+  height: 130px;
+  background-image: url("/assets/styles/secondary/svgs/return-active-focus.svg");
+}
+
+.btn-settings {
+  width: 130px;
+  height: 130px;
+  background-size: cover;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  will-change: background-image;
+  transition: width 0.2s ease-in-out, height 0.2s ease-in-out;
+  background-image: url("/assets/styles/secondary/svgs/settings-normal.svg");
+  transition: width 0.2s ease-in-out, height 0.2s ease-in-out;
+}
+.btn-settings:hover {
+  width: 140px;
+  height: 140px;
+  background-image: url("/assets/styles/secondary/svgs/settings-normal-hover.svg");
+}
+.btn-settings:active {
+  width: 130px;
+  height: 130px;
+  background-image: url("/assets/styles/secondary/svgs/settings-active.svg");
+}
+.btn-settings:focus-visible {
+  width: 140px;
+  height: 140px;
+  background-image: url("/assets/styles/secondary/svgs/settings-normal-focus.svg");
+}
+.btn-settings:focus-visible:active {
+  width: 130px;
+  height: 130px;
+  background-image: url("/assets/styles/secondary/svgs/settings-active-focus.svg");
+}
+
+.btn-home {
+  width: 130px;
+  height: 130px;
+  background-size: cover;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  will-change: background-image;
+  transition: width 0.2s ease-in-out, height 0.2s ease-in-out;
+  background-image: url("/assets/styles/secondary/svgs/home-normal.svg");
+  transition: width 0.2s ease-in-out, height 0.2s ease-in-out;
+}
+.btn-home:hover {
+  width: 140px;
+  height: 140px;
+  background-image: url("/assets/styles/secondary/svgs/home-normal-hover.svg");
+}
+.btn-home:active {
+  width: 130px;
+  height: 130px;
+  background-image: url("/assets/styles/secondary/svgs/home-active.svg");
+}
+.btn-home:focus-visible {
+  width: 140px;
+  height: 140px;
+  background-image: url("/assets/styles/secondary/svgs/home-normal-focus.svg");
+}
+.btn-home:focus-visible:active {
+  width: 130px;
+  height: 130px;
+  background-image: url("/assets/styles/secondary/svgs/home-active-focus.svg");
+}
+
+.btn-pause {
+  width: 130px;
+  height: 130px;
+  background-size: cover;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  will-change: background-image;
+  transition: width 0.2s ease-in-out, height 0.2s ease-in-out;
+  background-image: url("/assets/styles/secondary/svgs/pause-normal.svg");
+  transition: width 0.2s ease-in-out, height 0.2s ease-in-out;
+}
+.btn-pause:hover {
+  width: 140px;
+  height: 140px;
+  background-image: url("/assets/styles/secondary/svgs/pause-normal-hover.svg");
+}
+.btn-pause:active {
+  width: 130px;
+  height: 130px;
+  background-image: url("/assets/styles/secondary/svgs/pause-active.svg");
+}
+.btn-pause:focus-visible {
+  width: 140px;
+  height: 140px;
+  background-image: url("/assets/styles/secondary/svgs/pause-normal-focus.svg");
+}
+.btn-pause:focus-visible:active {
+  width: 130px;
+  height: 130px;
+  background-image: url("/assets/styles/secondary/svgs/pause-active-focus.svg");
+}
+
+.btn-replay {
+  width: 130px;
+  height: 130px;
+  background-size: cover;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  will-change: background-image;
+  transition: width 0.2s ease-in-out, height 0.2s ease-in-out;
+  background-image: url("/assets/styles/secondary/svgs/replay-normal.svg");
+  transition: width 0.2s ease-in-out, height 0.2s ease-in-out;
+}
+.btn-replay:hover {
+  width: 140px;
+  height: 140px;
+  background-image: url("/assets/styles/secondary/svgs/replay-normal-hover.svg");
+}
+.btn-replay:active {
+  width: 130px;
+  height: 130px;
+  background-image: url("/assets/styles/secondary/svgs/replay-active.svg");
+}
+.btn-replay:focus-visible {
+  width: 140px;
+  height: 140px;
+  background-image: url("/assets/styles/secondary/svgs/replay-normal-focus.svg");
+}
+.btn-replay:focus-visible:active {
+  width: 130px;
+  height: 130px;
+  background-image: url("/assets/styles/secondary/svgs/replay-active-focus.svg");
+}
+
+.btn-close {
+  width: 130px;
+  height: 130px;
+  background-size: cover;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  will-change: background-image;
+  transition: width 0.2s ease-in-out, height 0.2s ease-in-out;
+  background-image: url("/assets/styles/secondary/svgs/close-normal.svg");
+  transition: width 0.2s ease-in-out, height 0.2s ease-in-out;
+}
+.btn-close:hover {
+  width: 140px;
+  height: 140px;
+  background-image: url("/assets/styles/secondary/svgs/close-normal-hover.svg");
+}
+.btn-close:active {
+  width: 130px;
+  height: 130px;
+  background-image: url("/assets/styles/secondary/svgs/close-active.svg");
+}
+.btn-close:focus-visible {
+  width: 140px;
+  height: 140px;
+  background-image: url("/assets/styles/secondary/svgs/close-normal-focus.svg");
+}
+.btn-close:focus-visible:active {
+  width: 130px;
+  height: 130px;
+  background-image: url("/assets/styles/secondary/svgs/close-active-focus.svg");
+}
+
+.btn-howtoplay {
+  width: 320px;
+  height: 130px;
+  background-size: cover;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  will-change: background-image;
+  transition: width 0.2s ease-in-out, height 0.2s ease-in-out;
+  background-image: url("/assets/styles/secondary/svgs/howtoplay-normal.svg");
+  transition: width 0.2s ease-in-out, height 0.2s ease-in-out;
+}
+.btn-howtoplay:hover {
+  width: 340px;
+  height: 140px;
+  background-image: url("/assets/styles/secondary/svgs/howtoplay-normal-hover.svg");
+}
+.btn-howtoplay:active {
+  width: 320px;
+  height: 130px;
+  background-image: url("/assets/styles/secondary/svgs/howtoplay-active.svg");
+}
+.btn-howtoplay:focus-visible {
+  width: 340px;
+  height: 140px;
+  background-image: url("/assets/styles/secondary/svgs/howtoplay-normal-focus.svg");
+}
+.btn-howtoplay:focus-visible:active {
+  width: 320px;
+  height: 130px;
+  background-image: url("/assets/styles/secondary/svgs/howtoplay-active-focus.svg");
+}
+
+.btn-playagain {
+  width: 320px;
+  height: 130px;
+  background-size: cover;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  will-change: background-image;
+  transition: width 0.2s ease-in-out, height 0.2s ease-in-out;
+  background-image: url("/assets/styles/secondary/svgs/playagain-normal.svg");
+  transition: width 0.2s ease-in-out, height 0.2s ease-in-out;
+}
+.btn-playagain:hover {
+  width: 340px;
+  height: 140px;
+  background-image: url("/assets/styles/secondary/svgs/playagain-normal-hover.svg");
+}
+.btn-playagain:active {
+  width: 320px;
+  height: 130px;
+  background-image: url("/assets/styles/secondary/svgs/playagain-active.svg");
+}
+.btn-playagain:focus-visible {
+  width: 340px;
+  height: 140px;
+  background-image: url("/assets/styles/secondary/svgs/playagain-normal-focus.svg");
+}
+.btn-playagain:focus-visible:active {
+  width: 320px;
+  height: 130px;
+  background-image: url("/assets/styles/secondary/svgs/playagain-active-focus.svg");
+}
+
+.btn-back {
+  width: 240px;
+  height: 130px;
+  background-size: cover;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  will-change: background-image;
+  transition: width 0.2s ease-in-out, height 0.2s ease-in-out;
+  background-image: url("/assets/styles/secondary/svgs/back-normal.svg");
+  transition: width 0.2s ease-in-out, height 0.2s ease-in-out;
+}
+.btn-back:hover {
+  width: 260px;
+  height: 140px;
+  background-image: url("/assets/styles/secondary/svgs/back-normal-hover.svg");
+}
+.btn-back:active {
+  width: 240px;
+  height: 130px;
+  background-image: url("/assets/styles/secondary/svgs/back-active.svg");
+}
+.btn-back:focus-visible {
+  width: 260px;
+  height: 140px;
+  background-image: url("/assets/styles/secondary/svgs/back-normal-focus.svg");
+}
+.btn-back:focus-visible:active {
+  width: 240px;
+  height: 130px;
+  background-image: url("/assets/styles/secondary/svgs/back-active-focus.svg");
+}
+
+.btn-match {
+  width: 250px;
+  height: 250px;
+  background-size: cover;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  will-change: background-image;
+  transition: width 0.2s ease-in-out, height 0.2s ease-in-out;
+  background-image: url("/assets/styles/secondary/svgs/match-normal.svg");
+}
+.btn-match:hover {
+  width: 260px;
+  height: 260px;
+  background-image: url("/assets/styles/secondary/svgs/match-normal-hover.svg");
+}
+.btn-match:active {
+  width: 250px;
+  height: 250px;
+  background-image: url("/assets/styles/secondary/svgs/match-active.svg");
+}
+.btn-match:focus-visible {
+  width: 260px;
+  height: 260px;
+  background-image: url("/assets/styles/secondary/svgs/match-normal-focus.svg");
+}
+.btn-match:focus-visible:active {
+  width: 250px;
+  height: 250px;
+  background-image: url("/assets/styles/secondary/svgs/match-active-focus.svg");
+}
+
+.btn-1player {
+  width: 320px;
+  height: 130px;
+  background-size: cover;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  will-change: background-image;
+  transition: width 0.2s ease-in-out, height 0.2s ease-in-out;
+  background-image: url("/assets/styles/secondary/svgs/1player-normal.svg");
+  transition: width 0.2s ease-in-out, height 0.2s ease-in-out;
+}
+.btn-1player:hover {
+  width: 340px;
+  height: 140px;
+  background-image: url("/assets/styles/secondary/svgs/1player-normal-hover.svg");
+}
+.btn-1player:active {
+  width: 320px;
+  height: 130px;
+  background-image: url("/assets/styles/secondary/svgs/1player-active.svg");
+}
+.btn-1player:focus-visible {
+  width: 340px;
+  height: 140px;
+  background-image: url("/assets/styles/secondary/svgs/1player-normal-focus.svg");
+}
+.btn-1player:focus-visible:active {
+  width: 320px;
+  height: 130px;
+  background-image: url("/assets/styles/secondary/svgs/1player-active-focus.svg");
+}
+
+.btn-2player {
+  width: 320px;
+  height: 130px;
+  background-size: cover;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  will-change: background-image;
+  transition: width 0.2s ease-in-out, height 0.2s ease-in-out;
+  background-image: url("/assets/styles/secondary/svgs/2player-normal.svg");
+  transition: width 0.2s ease-in-out, height 0.2s ease-in-out;
+}
+.btn-2player:hover {
+  width: 340px;
+  height: 140px;
+  background-image: url("/assets/styles/secondary/svgs/2player-normal-hover.svg");
+}
+.btn-2player:active {
+  width: 320px;
+  height: 130px;
+  background-image: url("/assets/styles/secondary/svgs/2player-active.svg");
+}
+.btn-2player:focus-visible {
+  width: 340px;
+  height: 140px;
+  background-image: url("/assets/styles/secondary/svgs/2player-normal-focus.svg");
+}
+.btn-2player:focus-visible:active {
+  width: 320px;
+  height: 130px;
+  background-image: url("/assets/styles/secondary/svgs/2player-active-focus.svg");
+}
+
+.loading-bar-container {
+  border-radius: 200px;
+  border: 3px solid #ffffff;
+  box-sizing: border-box;
+  background: linear-gradient(to right, #5c9675 0%, #5c9675 10%, #cedf8c 40%, #cedf8c 100%);
+  width: 600px;
+  height: 44px;
+  overflow: hidden;
+  position: relative;
+}
+
+.loading-bar {
+  width: 70%; /* Adjust the width to simulate the progress */
+  height: 33px;
+  background: linear-gradient(to right, #1c5838 0%, #1c5838 10%, #bdcb5c 60%, #bdcb5c 100%);
+  border-radius: 25px; /* Rounded edges for the progress fill */
+  position: absolute; /* Positioning the bar relative to the container */
+  bottom: 0; /* Align to the bottom of the container */
+  left: 0; /* Ensure it starts from the left */
+}
+
+.progress-bar-container {
+  border-radius: 200px;
+  border: 3px solid #0f1b37;
+  box-sizing: border-box;
+  background: #fff;
+  width: 600px;
+  height: 44px;
+  overflow: hidden;
+}
+.progress-bar-container .progress-bar {
+  width: 70%; /* Adjust the width to simulate the progress */
+  height: 34px;
+  border: 2px solid #fff;
+  background: repeating-linear-gradient(120deg, #011e41, #011e41 18px, transparent 18px, transparent 46px), linear-gradient(to bottom, #2819b3, #011e41); /* Combine both backgrounds */
+  border-radius: 25px; /* Rounded edges for the progress fill */
+  position: relative;
+  background-size: 200% 100%; /* Increase background size for smoother animation */
+}
+@keyframes moveStripes {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: -100% 0; /* Move smoothly across the progress bar */
+  }
+}
+
+.svg-hilight {
+  position: absolute;
+  top: -1px;
+  left: 8px;
+  width: 20px;
+  height: 20px;
+  background-image: url('data:image/svg+xml;utf8,<svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18.2 9.2" fill="white"><path d="M12.3,1.4c0.4,0.8-2.9,1.3-6.1,3.1S0.8,10.2,0.1,9s1.5-4.7,4.6-6.5S11.7,0.1,12.3,1.4z"/><path d="M18.2,0.8c0,0.5-1.1,0.4-2.4,0.5c-1.2,0.1-2.2,0.4-2.2-0.1c0-0.5,0.9-1.1,2.1-1.2S18.1,0.3,18.2,0.8z"/></svg>');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  pointer-events: none; /* Prevent the SVG from interfering with button clicks */
+}
+
+.btn-character {
+  background-color: transparent;
+  background-repeat: no-repeat;
+  background-position: center;
+  border: none;
+  width: 100%;
+  height: 100%;
+  transition: padding 0.2s ease, transform 0.2s ease;
+  cursor: pointer;
+  transform: scale(1);
+}
+.btn-character:hover, .btn-character:focus:hover {
+  transform: scale(1.1);
+}
+.btn-character:active, .btn-character:focus:active {
+  transform: scale(0.95);
+}
+@media (hover: none) {
+  .btn-character:hover, .btn-character:focus:hover {
+    transform: none;
+  }
+  .btn-character:active, .btn-character:focus:active {
+    transform: scale(0.95);
+  }
+}
+
+.scorebox-container {
+  border-radius: 40px;
+  border: 4px solid #fff;
+  background: #002147;
+}
+.scorebox-container .scorebox-inner {
+  padding: 16px 24px;
+  text-align: center;
+  font-family: Lexend;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 120%;
+  color: #fff;
+}
+.scorebox-container .scorebox-inner .scorebox-player {
+  margin-bottom: 10px; /* Optional: space between player name and score */
+}
+.scorebox-container .scorebox-inner .scorebox-score-container {
+  display: flex;
+  align-items: center; /* Aligns items vertically in the center */
+  justify-content: center; /* Centers items horizontally */
+  gap: 20px;
+}
+.scorebox-container .scorebox-inner .scorebox-score-container .scorebox-score {
+  font-size: 40px;
+  width: 30px;
+}
+.scorebox-container .scorebox-inner .scorebox-score-container .scorebox-star-container {
+  width: 60px;
+  height: 60px;
+  display: flex;
+  align-items: center; /* Aligns items vertically in the center */
+  justify-content: center; /* Centers items horizontally */
+}
+.scorebox-container .scorebox-inner .scorebox-score-container .scorebox-star-container .scorebox-circle {
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  background-image: url("data:image/svg+xml;utf8,%3Csvg%20version='1.1'%20id='Layer_1'%20xmlns='http://www.w3.org/2000/svg'%20xmlns:xlink='http://www.w3.org/1999/xlink'%20viewBox='0%200%2060%2060'%3E%3Cstyle%20type='text/css'%3E.st0%7Bfill:%23FFE500;%7D.st1%7Bfill:%23FEF48F;%7D.st2%7Bfill:none;stroke:%230E2346;stroke-width:1.5;stroke-linecap:round;stroke-linejoin:round;%7D%3C/style%3E%3Cpath%20class='st0'%20d='M0.8,30c0,22.5,24.3,36.6,43.8,25.3c9.1-5.2,14.6-14.9,14.6-25.3c0-22.5-24.3-36.6-43.8-25.3C6.3,9.9,0.7,19.6,0.8,30z'/%3E%3Cpath%20class='st1'%20d='M0.9,33.1C3.3,10.7,29-0.7,47.2,12.5c6.7,4.9,11,12.4,11.9,20.6c0.1-1,0.2-2,0.2-3.1c0-22.5-24.4-36.6-43.8-25.3C6.3,9.9,0.7,19.6,0.7,30C0.7,31.1,0.8,32.1,0.9,33.1'/%3E%3Cpath%20class='st2'%20d='M0.8,30c0,22.5,24.3,36.6,43.8,25.3c9.1-5.2,14.6-14.9,14.6-25.3c0-22.5-24.3-36.6-43.8-25.3C6.3,9.9,0.7,19.6,0.8,30z'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.scorebox-container .scorebox-inner .scorebox-score-container .scorebox-star-container .scorebox-star {
+  position: absolute;
+  width: 35px;
+  height: 35px;
+  background-image: url("data:image/svg+xml;utf8,%3Csvg%20version%3D%271.1%27%20id%3D%27Layer_1%27%20xmlns%3D%27http%3A//www.w3.org/2000/svg%27%20xmlns%3Axlink%3D%27http%3A//www.w3.org/1999/xlink%27%20x%3D%270px%27%20y%3D%270px%27%20viewBox%3D%270%200%2035.2%2033.8%27%20style%3D%27enable-background%3Anew%200%200%2035%2033.8%3B%27%20xml%3Aspace%3D%27preserve%27%3E%3Cstyle%20type%3D%27text/css%27%3E%0A%09.st0%7Bfill%3A%23FEF48F%3B%7D%0A%09.st1%7Bfill%3A%23FFFAD1%3B%7D%0A%09.st2%7Bfill%3Anone%3Bstroke%3A%230E2346%3Bstroke-width%3A1.5%3Bstroke-linecap%3Around%3Bstroke-linejoin%3Around%3B%7D%0A%3C/style%3E%3Cpath%20class%3D%27st0%27%20d%3D%27M19.4%2C1.9l3.7%2C7.4c0.3%2C0.6%2C0.9%2C1%2C1.5%2C1.1l8.2%2C1.2c1.5%2C0.2%2C2.3%2C2%2C1.3%2C3.2c-0.1%2C0.1-0.1%2C0.1-0.2%2C0.2L28%2C20.8%0A%09c-0.5%2C0.5-0.7%2C1.1-0.6%2C1.8l1.4%2C8.1c0.3%2C1.5-1.2%2C2.8-2.7%2C2.2c-0.1%2C0-0.2-0.1-0.2-0.1L18.6%2C29c-0.6-0.3-1.3-0.3-1.9%2C0l-7.3%2C3.8%0A%09c-1.4%2C0.7-3-0.3-3-1.9c0-0.1%2C0-0.2%2C0-0.3l1.4-8.1c0.1-0.7-0.1-1.3-0.6-1.8L1.4%2C15c-1.1-1.1-0.6-3%2C0.9-3.4c0.1%2C0%2C0.2%2C0%2C0.3-0.1%0A%09l8.2-1.2c0.7-0.1%2C1.2-0.5%2C1.5-1.1l3.7-7.4c0.7-1.4%2C2.6-1.5%2C3.5-0.2C19.3%2C1.7%2C19.4%2C1.8%2C19.4%2C1.9z%27/%3E%3Cpath%20class%3D%27st1%27%20d%3D%27M6.7%2C29.2l1.2-6.7c0.1-0.7-0.1-1.3-0.6-1.8L1.4%2C15c-1.1-1.1-0.6-3%2C0.9-3.4c0.1%2C0%2C0.2%2C0%2C0.3-0.1l8.2-1.2%0A%09c0.7-0.1%2C1.2-0.5%2C1.5-1.1l3.7-7.4c0.7-1.4%2C2.6-1.5%2C3.5-0.2c0%2C0.1%2C0.1%2C0.2%2C0.1%2C0.2l3.7%2C7.4c0.3%2C0.6%2C0.9%2C1%2C1.5%2C1.1L6.7%2C29.2z%27/%3E%3Cpath%20class%3D%27st2%27%20d%3D%27M19.4%2C1.9l3.7%2C7.4c0.3%2C0.6%2C0.9%2C1%2C1.5%2C1.1l8.2%2C1.2c1.5%2C0.2%2C2.3%2C2%2C1.3%2C3.2c-0.1%2C0.1-0.1%2C0.1-0.2%2C0.2L28%2C20.8%0A%09c-0.5%2C0.5-0.7%2C1.1-0.6%2C1.8l1.4%2C8.1c0.3%2C1.5-1.2%2C2.8-2.7%2C2.2c-0.1%2C0-0.2-0.1-0.2-0.1L18.6%2C29c-0.6-0.3-1.3-0.3-1.9%2C0l-7.3%2C3.8%0A%09c-1.4%2C0.7-3-0.3-3-1.9c0-0.1%2C0-0.2%2C0-0.3l1.4-8.1c0.1-0.7-0.1-1.3-0.6-1.8L1.4%2C15c-1.1-1.1-0.6-3%2C0.9-3.4c0.1%2C0%2C0.2%2C0%2C0.3-0.1%0A%09l8.2-1.2c0.7-0.1%2C1.2-0.5%2C1.5-1.1l3.7-7.4c0.7-1.4%2C2.6-1.5%2C3.5-0.2C19.3%2C1.7%2C19.4%2C1.8%2C19.4%2C1.9z%27/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.ui-btns {
+  display: flex;
+  align-items: center;
+}
+
+.title-container {
+  position: absolute;
+  top: 100px;
+}
+
+.title {
+  width: 1200px;
+  font-size: 80px;
+  text-align: center;
+  font-family: "Lexend";
+  color: white;
+  text-shadow: -8px 8px black;
+}
+
+.loading-container {
+  height: 675px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.loading-text {
+  color: #ffffff;
+  font-family: Lexend;
+  font-size: 32px;
+  font-weight: 800;
+  line-height: 40px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.slide-pull-anim {
+  width: 150px;
+}
+
+.tick-container {
+  width: 60px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.tick-container .tick-circle {
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  background-image: url("data:image/svg+xml;utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 60 60'%3E%3Cpath fill='%238bc975' stroke='%230e2346' stroke-width='2' d='M1,30c0-7.7,3.1-15.1,8.5-20.5C14.9,4.1,22.3,1,30,1s15.1,3.1,20.5,8.5C55.9,14.9,59,22.3,59,30s-3.1,15.1-8.5,20.5C45.1,55.9,37.7,59,30,59s-15.1-3.1-20.5-8.5C4.1,45.1,1,37.7,1,30Z'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.tick-container .tick {
+  position: absolute;
+  width: 32px;
+  height: 32px;
+  background-image: url("data:image/svg+xml;utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Cpath fill='%23FFFFFF' stroke='%230E2346' stroke-width='2' d='M2.3 21.7c-.4-.4-.7-.9-.9-1.4C1.1 19.8 1 19.2 1 18.6c0-1.2.5-2.3 1.3-3.1.8-.8 1.9-1.3 3.1-1.3 1.2 0 2.3.5 3.1 1.3l0 0 4.2 4.2L23 3l0 0c.6-1 1.6-1.6 2.7-1.9 1.1-.2 2.3 0 3.2.6 1 .6 1.7 1.6 1.9 2.7.3 1.1.1 2.3-.5 3.3l0 0L17 28.9l0 0c-.3.6-.8 1-1.4 1.4-.6.3-1.2.6-1.8.6-.1 0-1.1.1-1.9-.2-.6-.2-1.2-.6-1.6-1L2.3 21.7z'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.cross-container {
+  width: 60px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.cross-container .cross-circle {
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  background-image: url("data:image/svg+xml;utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 60 60'%3E%3Cpath fill='%23FF2367' stroke='%230e2346' stroke-width='2' d='M1,30c0-7.7,3.1-15.1,8.5-20.5C14.9,4.1,22.3,1,30,1s15.1,3.1,20.5,8.5C55.9,14.9,59,22.3,59,30s-3.1,15.1-8.5,20.5C45.1,55.9,37.7,59,30,59s-15.1-3.1-20.5-8.5C4.1,45.1,1,37.7,1,30Z'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.cross-container .cross {
+  position: absolute;
+  width: 32px;
+  height: 32px;
+  background-image: url("data:image/svg+xml;utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Cpath fill='%23FFFFFF' stroke='%230E2346' stroke-width='2' d='M29.6 2.4c-1.8-1.8-4.8-1.8-6.6 0l0 0L16 9.4l-7.1-7 0 0c-1.8-1.8-4.8-1.8-6.6 0l0 0C0.5 4.2 0.5 7.2 2.4 9l0 0 7.1 7-7.1 7.1 0 0c-1.8 1.8-1.8 4.8 0 6.6 1.8 1.8 4.8 1.8 6.6 0l7.1-7.1 7.1 7c1.8 1.8 4.8 1.8 6.6 0 1.8-1.8 1.8-4.8 0-6.6l-7-7 7.1-7.1c1.8-1.8 1.8-4.8 0-6.6Z'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+@keyframes throb {
+  0%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.4);
+  }
+}
+.anim-throb {
+  animation: throb 1s;
+}
+
+.anim-throb-delay {
+  animation: throb 1s;
+  animation-delay: 0.2s;
+}
+
+/*# sourceMappingURL=secondary.css.map */
