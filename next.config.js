@@ -14,6 +14,7 @@ const nextConfig = {
       }
     ]
   },
+  swcMinify: false,
   transpilePackages: ['geist']
 };
 
