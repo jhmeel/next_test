@@ -1,17 +1,17 @@
-// Protecting routes with next-auth
-// https://next-auth.js.org/configuration/nextjs#middleware
-// https://nextjs.org/docs/app/building-your-application/routing/middleware
+import { NextRequest, NextResponse } from 'next/server';
 
-import NextAuth from 'next-auth';
-import authConfig from '@/lib/auth.config';
+export default function middleware(req: NextRequest) {
+  // For now, this will allow access to all dashboard routes
+  // Replace this with your actual authentication logic when ready
+  const isAuthenticated = true;
 
-const { auth } = NextAuth(authConfig);
-
-export default auth((req) => {
-  if (!req.auth) {
-    const url = req.url.replace(req.nextUrl.pathname, '/');
-    return Response.redirect(url);
+  if (!isAuthenticated) {
+    // Redirect to the home page or login page
+    const url = new URL('/', req.url);
+    return NextResponse.redirect(url);
   }
-});
+
+  return NextResponse.next();
+}
 
 export const config = { matcher: ['/dashboard/:path*'] };

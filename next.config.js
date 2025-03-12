@@ -4,17 +4,14 @@ const nextConfig = {
     remotePatterns: [
       {
         protocol: 'https',
-        hostname: 'utfs.io',
-        port: ''
+        hostname: 'utfs.io'
       },
       {
         protocol: 'https',
-        hostname: 'api.slingacademy.com',
-        port: ''
+        hostname: 'api.slingacademy.com'
       }
     ]
   },
-  swcMinify: false,
   transpilePackages: ['geist']
 };
 
