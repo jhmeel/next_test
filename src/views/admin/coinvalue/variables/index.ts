@@ -39,7 +39,7 @@ export interface Cryptocurrency {
       id: 'bitcoin',
       name: 'Bitcoin',
       symbol: 'BTC',
-      current_price: 58432.21,
+      current_price: 88546.21,
       price_change_percentage_24h: 2.45,
       market_cap: 1089432156734,
       total_volume: 46582134987,

@@ -1,3 +1,4 @@
+"use client"
 import React, { useState, useEffect, useMemo, useCallback } from 'react';
 import {
   Box,
@@ -83,7 +84,7 @@ const CoinValues: React.FC = () => {
       setFearGreedIndex(fgIndex);
       
 
-      if (cryptoData[0].id === 'bitcoin' && cryptoData[0].current_price === 58432.21) {
+      if (cryptoData[0].id === 'bitcoin' && cryptoData[0].current_price === 88546.21) {
         setIsDemoData(true);
         toast({
           title: 'Using demo data',

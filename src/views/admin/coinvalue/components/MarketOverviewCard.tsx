@@ -60,7 +60,7 @@
               <ArrowDownIcon boxSize={4} mr={1} />
             )}
             <Text fontSize="sm">
-              {changeValue >= 0 ? '+' : ''}{changeValue.toFixed(1)}% ({changePeriod})
+              {changeValue >= 0 ? '+' : ''}{changeValue?.toFixed(1)}% ({changePeriod})
             </Text>
           </Flex>
         </Skeleton>

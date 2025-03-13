@@ -5,6 +5,7 @@
     Tbody,
     Tr,
     Th,
+    Td,
     Box,
     useColorModeValue,
     Skeleton,
