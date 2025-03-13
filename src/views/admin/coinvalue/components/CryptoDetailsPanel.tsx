@@ -92,17 +92,19 @@ const CryptoDetailPanel: React.FC<CryptoDetailPanelProps> = ({
           {formatCurrency(crypto.current_price)}
         </Text>
         <Flex alignItems="center">
-          <StatArrow 
-            type={crypto.price_change_percentage_24h >= 0 ? 'increase' : 'decrease'} 
-          />
-          <Text
-            fontSize="md"
-            fontWeight="medium"
-            color={crypto.price_change_percentage_24h >= 0 ? "green.500" : "red.500"}
-          >
-            {crypto.price_change_percentage_24h >= 0 ? '+' : ''}
-            {crypto.price_change_percentage_24h.toFixed(2)}%
-          </Text>
+          <Stat display="flex" alignItems="center">
+            <StatArrow 
+              type={crypto.price_change_percentage_24h >= 0 ? 'increase' : 'decrease'} 
+            />
+            <Text
+              fontSize="md"
+              fontWeight="medium"
+              color={crypto.price_change_percentage_24h >= 0 ? "green.500" : "red.500"}
+            >
+              {crypto.price_change_percentage_24h >= 0 ? '+' : ''}
+              {crypto.price_change_percentage_24h.toFixed(2)}%
+            </Text>
+          </Stat>
           <Text fontSize="sm" color={subTextColor} ml={1}>
             (24h)
           </Text>
@@ -154,4 +156,3 @@ const CryptoDetailPanel: React.FC<CryptoDetailPanelProps> = ({
 };
 
 export default CryptoDetailPanel;
-

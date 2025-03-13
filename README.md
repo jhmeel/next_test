@@ -13,8 +13,8 @@ The CoinValue page uses real-time market data from coingecko, coinpaprika and de
 ## Installation & Setup  
 1. Clone the repository:  
    ```sh
-   git clone https://github.com/your-repo/coinvalue-dashboard.git
-   cd coinvalue-dashboard
+   git clone https://github.com/jhmeel/next_test/tree/feature/coin-value-page.git
+ 
    ```
 2. Install dependencies:  
    ```sh
@@ -27,16 +27,18 @@ The CoinValue page uses real-time market data from coingecko, coinpaprika and de
 
 
 ## Key files created 
-```
- SearchBar.tsx
-  CryptoTable.tsx
-  MarketOverviewCard.tsx
- CryptoDetailPanel.tsx
-SparklineChart.tsx
-coinvalues.tsx
-  variables(
-   types,
-cryptoApi
- formatters
-cryptocurrencies)
-```
+src/
+├──app/
+├   └──admin/
+├      └──coin-values
+├── views/
+│   └── admin/
+│       └── coinvalue/
+│           ├── components/
+│           │   ├── SearchBar.tsx
+│           │   ├── CryptoTable.tsx
+│           │   ├── MarketOverviewCard.tsx
+│           │   ├── CryptoDetailPanel.tsx
+│           │   └── SparklineChart.tsx
+│           └── variables.
+└── 

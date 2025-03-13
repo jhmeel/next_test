@@ -13,12 +13,12 @@
     color 
   }) => {
     const canvasRef = useRef<HTMLCanvasElement>(null);
-    const positiveColor = useColorModeValue('green.500', 'green.300');
-    const negativeColor = useColorModeValue('red.500', 'red.300');
+    const positiveColor = 'green'
+    const negativeColor = 'red'
     
     // Determine if trend is positive
     const isPositive = data.length > 1 ? data[data.length - 1] >= data[0] : true;
-    const lineColor = color || (isPositive ? positiveColor : negativeColor);
+    const lineColor =  color || (isPositive ? positiveColor : negativeColor);
     
     useEffect(() => {
       const canvas = canvasRef.current;
