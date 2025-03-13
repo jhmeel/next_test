@@ -20,7 +20,6 @@ import {
 import SearchBar from 'views/admin/coinvalue/components/SearchBar';
 import MarketOverviewCard from 'views/admin/coinvalue/components/MarketOverviewCard';
 import CryptoTable from 'views/admin/coinvalue/components/CryptoTable';
-import CryptoDetailsPanel from 'views/admin/coinvalue/components/CryptoDetailsPanel';
 
 const CoinValues: React.FC = () => {
 
@@ -250,16 +249,6 @@ const CoinValues: React.FC = () => {
             />
           </GridItem>
           
-          {selectedCrypto && (
-            <GridItem>
-              <CryptoDetailsPanel 
-                crypto={selectedCrypto}
-                timeframe={timeframe}
-                isFavorited={favorites.includes(selectedCrypto.id)}
-                onToggleFavorite={() => handleToggleFavorite(selectedCrypto.id)}
-              />
-            </GridItem>
-          )}
         </Grid>
       </Container>
     </Box>

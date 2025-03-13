@@ -38,7 +38,6 @@ src/
 │           │   ├── SearchBar.tsx
 │           │   ├── CryptoTable.tsx
 │           │   ├── MarketOverviewCard.tsx
-│           │   ├── CryptoDetailPanel.tsx
 │           │   └── SparklineChart.tsx
 │           └── variables.
 └── 
